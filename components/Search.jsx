@@ -5,7 +5,7 @@ import { MagnifyingGlassIcon, MicrophoneIcon } from "@heroicons/react/24/solid";
 export default function Search() {
 	return (
 		<>
-			<form className="flex flex-col items-center mt-40">
+			<form className="flex flex-col items-center mt-40 sm:mt-20">
 				<Logo />
 				<div className="flex mt-5 w-full mx-auto max-w-[90%] px-5 py-3 border border-gray-200 rounded-full items-center hover:shadow-lg focus-within:shadow-lg sm:max-w-xl lg:max-w-2xl">
 					<MagnifyingGlassIcon className="h-5 text-purple-600 mr-3" />
