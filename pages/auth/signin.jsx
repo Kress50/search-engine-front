@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "../../components/Header";
 import { getProviders, signIn } from "next-auth/react";
+import Logo from "../../components/UI/Logo";
 
 export default function signin({ providers }) {
 	return (
 		<>
 			<Header />
 			<div className="flex flex-col items-center mt-40">
-				<h1 className="text-7xl">10JIN</h1>
+				<Logo />
 				<div className="">
 					{Object.values(providers).map((provider) => (
 						<div key={provider.name} className="flex flex-col items-center">

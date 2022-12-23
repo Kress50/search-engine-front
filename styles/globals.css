@@ -10,4 +10,8 @@
 	.auth-button {
 		@apply text-white bg-purple-600 px-6 py-2 font-medium rounded-md hover:bg-purple-500 hover:shadow-md;
 	}
+
+	.search-button {
+		@apply bg-gray-100 p-3 rounded-md text-sm text-gray-700 hover:ring-1 hover:ring-gray-200 hover:shadow-md active:ring-gray-300;
+	}
 }
