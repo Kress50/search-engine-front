@@ -4,14 +4,14 @@
 
 @layer components {
 	.link {
-		@apply hover:underline cursor-pointer;
+		@apply cursor-pointer hover:underline;
 	}
 
 	.auth-button {
-		@apply text-white bg-purple-600 px-6 py-2 font-medium rounded-md hover:bg-purple-500 hover:shadow-md whitespace-nowrap select-none;
+		@apply select-none whitespace-nowrap rounded-md bg-purple-600 px-6 py-2 font-medium text-white hover:bg-purple-500 hover:shadow-md;
 	}
 
 	.search-button {
-		@apply bg-gray-100 p-3 rounded-md text-sm text-gray-700 hover:ring-1 hover:ring-gray-200 hover:shadow-md active:ring-gray-300;
+		@apply rounded-md bg-gray-100 p-3 text-sm text-gray-700 hover:shadow-md hover:ring-1 hover:ring-gray-200 active:ring-gray-300;
 	}
 }

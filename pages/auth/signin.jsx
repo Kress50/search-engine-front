@@ -7,12 +7,12 @@ export default function signin({ providers }) {
 	return (
 		<>
 			<Header />
-			<div className="flex flex-col items-center mt-40">
+			<div className="mt-40 flex flex-col items-center">
 				<Logo textSize="text-7xl" select="select-none" />
 				<div>
 					{Object.values(providers).map((provider) => (
 						<div key={provider.name} className="flex flex-col items-center">
-							<p className="italic my-10 center">
+							<p className="center my-10 italic">
 								Authenticate using your {provider.name} account to gain access
 								to more features of this site
 							</p>

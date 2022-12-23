@@ -13,7 +13,7 @@ export default function Home() {
 		e.preventDefault();
 		const query = searchInputRef.current.value.trim();
 		if (!query) return;
-		router.push(`/search?query=${query}`);
+		router.push(`/search?term=${query}&searchType=`);
 	}
 
 	function randomHandler(e) {
