@@ -1,9 +1,25 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { useRef } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Search from "../components/Search";
 
 export default function Home() {
+	const router = useRouter();
+	const searchInputRef = useRef(null);
+
+	function searchHandler(e) {
+		e.preventDefault();
+		const query = searchInputRef.current.value.trim();
+		if (!query) return;
+		router.push(`/search?query=${query}`);
+	}
+
+	function randomHandler(e) {
+		e.preventDefault();
+	}
+
 	return (
 		<>
 			<Head>
@@ -13,7 +29,11 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Header />
-			<Search />
+			<Search
+				searchInputRef={searchInputRef}
+				searchHandler={searchHandler}
+				randomHandler={randomHandler}
+			/>
 			<Footer />
 		</>
 	);
