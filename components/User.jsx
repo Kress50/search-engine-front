@@ -1,7 +1,7 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import React from "react";
 
-export default function User() {
+export default function User({ className }) {
 	const { data: session } = useSession();
 
 	if (session) {
@@ -19,7 +19,7 @@ export default function User() {
 
 	return (
 		<>
-			<button className="auth-button" onClick={signIn}>
+			<button className={`auth-button ${className}`} onClick={signIn}>
 				Sign in
 			</button>
 		</>

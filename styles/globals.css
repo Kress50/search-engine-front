@@ -8,7 +8,7 @@
 	}
 
 	.auth-button {
-		@apply text-white bg-purple-600 px-6 py-2 font-medium rounded-md hover:bg-purple-500 hover:shadow-md;
+		@apply text-white bg-purple-600 px-6 py-2 font-medium rounded-md hover:bg-purple-500 hover:shadow-md whitespace-nowrap select-none;
 	}
 
 	.search-button {

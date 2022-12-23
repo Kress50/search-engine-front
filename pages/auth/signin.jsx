@@ -8,8 +8,8 @@ export default function signin({ providers }) {
 		<>
 			<Header />
 			<div className="flex flex-col items-center mt-40">
-				<Logo />
-				<div className="">
+				<Logo textSize="text-7xl" select="select-none" />
+				<div>
 					{Object.values(providers).map((provider) => (
 						<div key={provider.name} className="flex flex-col items-center">
 							<p className="italic my-10 center">
