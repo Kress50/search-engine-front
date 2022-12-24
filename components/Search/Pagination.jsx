@@ -23,7 +23,7 @@ export default function Pagination() {
         </Link>
       )}
       <div>
-        <Logo textSize="text-2xl" select="select-none" />
+        <Logo textSize="text-xl" select="select-none" />
       </div>
       {startIndex < 90 && (
         <Link
