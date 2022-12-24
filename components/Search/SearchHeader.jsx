@@ -12,7 +12,7 @@ import SearchHeaderOptions from "./SearchHeaderOptions";
 export default function SearchHeader() {
   const router = useRouter();
   const searchInputRef = useRef(null);
-  const defaultInputValue = router.query.query;
+  const defaultInputValue = router.query.term;
 
   function searchHandler(e) {
     e.preventDefault();

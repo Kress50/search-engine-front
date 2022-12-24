@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-	.link {
-		@apply cursor-pointer hover:underline;
-	}
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
 
-	.auth-button {
-		@apply select-none whitespace-nowrap rounded-md bg-purple-600 px-6 py-2 font-medium text-white hover:bg-purple-500 hover:shadow-md;
-	}
+  .auth-button {
+    @apply select-none whitespace-nowrap rounded-md bg-purple-600 px-6 py-2 font-medium text-white hover:bg-purple-500 hover:shadow-md;
+  }
 
-	.search-button {
-		@apply rounded-md bg-gray-100 p-3 text-sm text-gray-700 hover:shadow-md hover:ring-1 hover:ring-gray-200 active:ring-gray-300;
-	}
+  .search-button {
+    @apply rounded-md bg-gray-100 p-3 text-sm text-gray-700 hover:shadow-md hover:ring-1 hover:ring-gray-200 active:ring-gray-300;
+  }
 }
