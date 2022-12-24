@@ -2,13 +2,14 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
 import SearchHeader from "../components/Search/SearchHeader";
-import SearchResults from "../components/Search/SearchResults";
+import SearchResultsInfo from "../components/Search/SearchResultsInfo";
 import response from "./response";
 
 export default function search(props) {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { query } = useRouter();
   const dynamicTitle = query.term;
+  const searchQueryObject = props.results.results;
   console.log(props);
 
   return (
@@ -17,7 +18,7 @@ export default function search(props) {
         <title>{`${dynamicTitle} - 10JIN`}</title>
       </Head>
       <SearchHeader />
-      <SearchResults />
+      <SearchResultsInfo results={searchQueryObject.searchInformation} />
     </div>
   );
 }
