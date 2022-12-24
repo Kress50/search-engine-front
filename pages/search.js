@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
 import SearchHeader from "../components/Search/SearchHeader";
+import SearchResults from "../components/Search/SearchResults";
 import SearchResultsInfo from "../components/Search/SearchResultsInfo";
 import response from "./response";
 
@@ -10,16 +11,16 @@ export default function search(props) {
   const { query } = useRouter();
   const dynamicTitle = query.term;
   const searchQueryObject = props.results.results;
-  console.log(props);
 
   return (
-    <div>
+    <>
       <Head>
         <title>{`${dynamicTitle} - 10JIN`}</title>
       </Head>
       <SearchHeader />
       <SearchResultsInfo results={searchQueryObject.searchInformation} />
-    </div>
+      <SearchResults results={searchQueryObject} />
+    </>
   );
 }
 
