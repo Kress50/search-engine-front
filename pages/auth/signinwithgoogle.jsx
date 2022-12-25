@@ -10,20 +10,21 @@ export default function signinwithgoogle({ providers }) {
       <div className="mt-40 flex flex-col items-center">
         <Logo textSize="text-7xl" select="select-none" />
         <div>
-          {Object.values(providers).map((provider) => (
-            <div key={provider.name} className="flex flex-col items-center">
-              <p className="center my-10 italic">
-                Authenticate using your {provider.name} account to gain access
-                to more features of this site
-              </p>
-              <button
-                onClick={() => signIn(provider.id, { callbackUrl: "/" })}
-                className="auth-button"
-              >
-                Sign in with {provider.name}
-              </button>
-            </div>
-          ))}
+          {providers &&
+            Object.values(providers).map((provider) => (
+              <div key={provider.name} className="flex flex-col items-center">
+                <p className="center my-10 italic">
+                  Authenticate using your {provider.name} account to gain access
+                  to more features of this site
+                </p>
+                <button
+                  onClick={() => signIn(provider.id, { callbackUrl: "/" })}
+                  className="auth-button"
+                >
+                  Sign in with {provider.name}
+                </button>
+              </div>
+            ))}
         </div>
       </div>
     </>
