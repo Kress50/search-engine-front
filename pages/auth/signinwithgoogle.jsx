@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import { getProviders, signIn } from "next-auth/react";
 import Logo from "../../components/UI/Logo";
 
-export default function signin({ providers }) {
+export default function signinwithgoogle({ providers }) {
   return (
     <>
       <Header />

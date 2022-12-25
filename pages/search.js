@@ -35,7 +35,8 @@ export default function search(props) {
 //Getting data from Google Programmable Search Engine API
 export async function getServerSideProps(cx) {
   const startIndex = cx.query.start || 1;
-  await fetch(
+  //Gets mock data object if true otherwise calls an API
+  const dataBlob = await fetch(
     `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${
       process.env.CONTEXT_KEY
     }&q=${cx.query.term}${
