@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Tenjin (10|JIN) Search Engine
 
-First, run the development server:
+A React / NextJS studying project using Google Programmable Search Engine API. Trying to emulate some of the front-end functionality of a Google-style search engine web page. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- React
+- NextJS
+- TailwindCSS
+- NextAuth for Google OAuth session management
+- HeroIcons for icons
+- next-themes for NextJS darkmode theme management  
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Demo
 
-## Learn More
+https://tenjin-web-search.vercel.app
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![App Screenshot](https://i.imgur.com/9MEwmiU.jpg)
 
-## Deploy on Vercel
+![App Screenshot](https://i.imgur.com/F4hm2dM.jpg)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Appendix
+
+This site has no affilication with Google or any other corporate entities. This site was made for personal use / studying purposes and any use of the existing trademarks are used only in informational context.
+
