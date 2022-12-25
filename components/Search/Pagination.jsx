@@ -16,7 +16,7 @@ export default function Pagination() {
             router.query.searchType
           }&start=${startIndex - 10}`}
         >
-          <div className="flex cursor-pointer flex-col text-sm text-gray-500 hover:text-purple-600 hover:underline">
+          <div className="dark-theme flex cursor-pointer flex-col text-sm text-gray-500 hover:text-purple-600 hover:underline">
             <ChevronLeftIcon className="h-5 " />
             <p>Prev</p>
           </div>
@@ -31,7 +31,7 @@ export default function Pagination() {
             router.query.searchType
           }&start=${startIndex + 10}`}
         >
-          <div className="flex cursor-pointer flex-col text-sm text-gray-500 hover:text-purple-600 hover:underline">
+          <div className="dark-theme flex cursor-pointer flex-col text-sm text-gray-500 hover:text-purple-600 hover:underline">
             <ChevronRightIcon className="h-5" />
             <p>Next</p>
           </div>

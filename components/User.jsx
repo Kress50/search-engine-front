@@ -11,7 +11,7 @@ export default function User({ className }) {
           onClick={signOut}
           src={session.user.image}
           alt="user-image"
-          className="h-10 w-10 cursor-pointer rounded-full p-1 hover:bg-gray-200"
+          className="h-10 w-10 cursor-pointer rounded-full p-1 hover:bg-gray-200 dark:hover:bg-zinc-600"
         ></img>
       </>
     );

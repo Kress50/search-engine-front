@@ -5,8 +5,8 @@ export default function Footer() {
 
   return (
     <footer className="absolute inset-x-0 bottom-0">
-      <div className="flex justify-between bg-white p-5 text-sm text-gray-500">
-        <p>Copyright &copy; {currentData} Kress50</p>
+      <div className="flex justify-between bg-white p-5 text-sm text-gray-500 dark:bg-zinc-900 dark:text-neutral-400">
+        <p>Made by Kress50 | {currentData}</p>
         <p>
           This project was done for personal use / studying purposes and has no
           affiliation with any existing corporate entities

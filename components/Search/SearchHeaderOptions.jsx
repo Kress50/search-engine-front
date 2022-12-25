@@ -13,7 +13,7 @@ export default function SearchHeaderOptions() {
   const imagesSelected = router.query.searchType === "image";
 
   return (
-    <div className="flex w-full select-none justify-center gap-8 text-sm text-gray-700 sm:justify-start sm:pl-52">
+    <div className="dark-theme flex w-full select-none justify-center gap-8 text-sm text-gray-700 sm:justify-start sm:pl-52">
       <SearchHeaderOption
         title="All"
         Icon={MagnifyingGlassCircleIcon}

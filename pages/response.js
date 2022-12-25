@@ -1,3 +1,5 @@
+//Mock data for query testing
+
 export default {
   results: {
     kind: "customsearch#search",

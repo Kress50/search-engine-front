@@ -14,4 +14,12 @@
   .search-button {
     @apply rounded-md bg-gray-100 p-3 text-sm text-gray-700 hover:shadow-md hover:ring-1 hover:ring-gray-200 active:ring-gray-300;
   }
+
+  .search-button-dark {
+    @apply dark:bg-zinc-800 dark:text-neutral-300 dark:hover:ring-zinc-600 dark:hover:ring-zinc-500;
+  }
+
+  .dark-theme {
+    @apply dark:bg-zinc-900 dark:text-neutral-300;
+  }
 }

@@ -14,12 +14,14 @@ export default function SearchResults(props) {
               className="decoration-purple-600 group-hover:underline"
               href={result.link}
             >
-              <h2 className="truncate text-xl font-medium text-purple-800 group-hover:text-purple-600">
+              <h2 className="truncate text-xl font-medium text-purple-800 group-hover:text-purple-600 dark:text-purple-200">
                 {result.title}
               </h2>
             </a>
           </div>
-          <p className="text-gray-600">{HTMLReactParser(result.htmlSnippet)}</p>
+          <p className="dark-theme text-gray-600">
+            {HTMLReactParser(result.htmlSnippet)}
+          </p>
         </div>
       ))}
     </div>

@@ -16,8 +16,15 @@ export default function Home() {
     router.push(`/search?term=${query}&searchType=`);
   }
 
-  function randomHandler(e) {
+  async function randomHandler(e) {
     e.preventDefault();
+    const randomWord = await fetch("https://random-word-api.herokuapp.com/word")
+      .then((result) => result.json())
+      .catch((error) => {
+        console.log(error);
+        return "Vercel";
+      });
+    router.push(`/search?term=${randomWord}&searchType=`);
   }
 
   return (

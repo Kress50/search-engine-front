@@ -9,7 +9,6 @@ import SearchResultsInfo from "../components/Search/SearchResultsInfo";
 import response from "./response";
 
 export default function search(props) {
-  console.log(props);
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { query } = useRouter();
   const dynamicTitle = query.term;
