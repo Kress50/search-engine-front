@@ -33,7 +33,7 @@ export default function Home() {
         <title>10JIN</title>
         <meta name="description" content="10JIN Web Search Engine" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header />
       <Search
