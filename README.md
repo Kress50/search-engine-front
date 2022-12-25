@@ -28,5 +28,5 @@ https://tenjin-web-search.vercel.app
 
 ## Appendix
 
-This site has no affilication with Google or any other corporate entities. This site was made for personal use / studying purposes and any use of the existing trademarks are used only in informational context.
+This site has no affiliation with Google or any other corporate entities. This site was made for personal use / studying purposes and any use of the existing trademarks are used only in informational context.
 
