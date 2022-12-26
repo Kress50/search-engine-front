@@ -3,7 +3,7 @@ import React from "react";
 
 export default function SearchResults(props) {
   return (
-    <div className="mx-3 mb-7 flex flex-col gap-8 pl-7 text-left md:pl-[195px]">
+    <div className="mx-3 mb-7 flex flex-col gap-8 text-left md:pl-[195px]">
       {props.results.items.map((result) => (
         <div key={result.link} className="max-w-2xl">
           <div className="group ">

@@ -12,7 +12,10 @@ export default function signinwithgoogle({ providers }) {
         <div>
           {providers &&
             Object.values(providers).map((provider) => (
-              <div key={provider.name} className="flex flex-col items-center">
+              <div
+                key={provider.name}
+                className="mx-5 flex flex-col items-center"
+              >
                 <p className="center my-10 italic">
                   Authenticate using your {provider.name} account to gain access
                   to more features of this site

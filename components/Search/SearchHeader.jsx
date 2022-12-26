@@ -20,11 +20,14 @@ export default function SearchHeader() {
 
   return (
     <header className="sticky top-0 bg-white dark:bg-zinc-900">
-      <div className="flex w-full items-center p-6">
+      <div className="flex w-full items-center p-3 sm:p-6">
         <div className="inline-block" onClick={() => router.push("/")}>
-          <Logo textSize="text-4xl" select="cursor-pointer select-none" />
+          <Logo
+            textSize="text-4xl"
+            select="cursor-pointer select-none hidden sm:flex"
+          />
         </div>
-        <form className="ml-10 mr-5 flex max-w-3xl flex-grow items-center rounded-full border border-gray-200 px-6 py-2 shadow-lg dark:border-zinc-800">
+        <form className="mr-5 flex max-w-3xl flex-grow items-center rounded-full border border-gray-200 px-6 py-2 shadow-lg dark:border-zinc-800 sm:ml-10">
           <input
             type="text"
             defaultValue={defaultInputValue}
@@ -41,7 +44,7 @@ export default function SearchHeader() {
         </form>
         <div className="ml-auto flex gap-4">
           <ThemeButton />
-          <User className="ml-auto" />
+          <User className="ml-auto hidden sm:flex" />
         </div>
       </div>
       <SearchHeaderOptions />
