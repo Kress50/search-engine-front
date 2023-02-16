@@ -1,5 +1,5 @@
 
-# Tenjin (10|JIN) Search Engine
+# Tenjin (10|JIN) Search
 
 A React / NextJS studying project using Google Programmable Search Engine API. Trying to emulate some of the front-end functionality of a Google-style search engine web page. 
 
